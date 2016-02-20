@@ -3,7 +3,8 @@ from sklearn.svm import SVR
 
 
 #tmp = 'silly/Kaggle/regression'
-X = np.load('Data/X.npy')
+#X = np.load('Data/X.npy')
+X = np.genfromtxt('Data/reg_train_in.csv', delimiter=',')
 y = np.load('Data/reg_train_out.npy')
 y = [x[0] for x in y]
 y=np.array(y)
